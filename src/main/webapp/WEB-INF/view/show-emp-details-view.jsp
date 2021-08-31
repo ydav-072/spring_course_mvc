@@ -4,6 +4,12 @@
     <title>Title</title>
 </head>
 <body>
-<h2>Hello WORLD!!!!!</h2>
+<h2></h2>
+<h2>Dear Employee, you are WELCOME!</h2>
+<br>
+<br>
+<%--Your name: ${param.employeeName}--%>
+
+Your name: ${nameAttribute}
 </body>
 </html>
