@@ -29,5 +29,9 @@ Language(s):
         <li>${lang}</li>
     </c:forEach>
 </ul>
+<br><br>
+Phone Number: ${employee.phoneNumber}
+<br><br>
+Email: ${employee.email}
 </body>
 </html>

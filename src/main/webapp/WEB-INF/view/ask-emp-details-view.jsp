@@ -10,10 +10,13 @@
 <br>
 <form:form action="showDetails" modelAttribute="employee">
     Name <form:input path="name"></form:input>
+    <form:errors path="name"></form:errors>
     <br><br>
     Surname <form:input path="surname"></form:input>
+    <form:errors path="surname"></form:errors>
     <br><br>
     Salary <form:input path="salary"></form:input>
+    <form:errors path="salary"></form:errors>
     <br><br>
     Department <form:select path="department">
 <%--        <form:option value="Information Technology" label="IT"></form:option>--%>
@@ -33,6 +36,12 @@
 <%--    DE <form:checkbox path="languages" value="Deutch"></form:checkbox>--%>
 <%--    FR <form:checkbox path="languages" value="French"></form:checkbox>--%>
     <form:checkboxes path="languages" items="${employee.langMap}"></form:checkboxes>
+    <br><br>
+    Phone Number <form:input path="phoneNumber"></form:input>
+    <form:errors path="phoneNumber"></form:errors>
+    <br><br>
+    Email <form:input path="email"></form:input>
+    <form:errors path="email"></form:errors>
     <br><br>
     <input type="submit" value="OK">
 </form:form>
